@@ -1,0 +1,53 @@
+/*No es de extrañar que el diseño de CSS esté basado principalmente en el modelo de caja. Cada una de las cajas que ocupa espacio en tu página tiene propiedades como estas:
+
+padding (relleno), el espacio alrededor del contenido. En el ejemplo siguiente, es el espacio alrededor del texto del párrafo.
+border (marco), la línea que se encuentra fuera del relleno.
+margin (margen), el espacio fuera del elemento que lo separa de los demás.
+
+En esta sección también se utiliza:
+
+width (ancho del elemento)
+background-color, el color de fondo del contenido y del relleno
+color, el color del contenido del elemento (generalmente texto)
+text-shadow: coloca una sombra difuminada en el texto dentro del elemento
+display: selecciona el modo de visualización para el elemento (no te preocupes de esto por ahora)
+
+*/
+
+html {
+  font-size: 20px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura. */
+  font-family: "Oswald", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts. */
+  background-color: #7C7573; /* color fondo de pagina. */
+}
+
+h1 {
+  font-size: 60px; /* Tamaño del texto del titulo.*/
+  text-align: center; /* centrado del titulo. */
+  margin: 0; /* elimina el estilo automatico de los navegadores. */
+  padding: 20px 0; /* Espacio entre titulo texto.*/
+  color: grey; /* Color del texto */
+  text-shadow: 3px 3px 1px black; /* El primer valor en píxeles asigna el desplazamiento horizontal de la sombra desde el texto —qué tan lejos la mueve a la derecha—. Un valor negativo la moverá a la izquierda.
+El segundo valor en píxeles asigna el desplazamiento vertical de la sombra desde el texto —qué tan lejos la mueve hacia abajo—. En este ejemplo, un valor negativo la desplazaría hacia arriba.
+El tercer valor en píxeles asigna radio de desenfoque de la sombra —un valor grande es igual a una sombra borrosa—.
+El cuarto valor asigna el color base de la sombra. */
+}
+
+p, li {
+  font-size: 16px; /* Tamaño(en pixeles) de fuente(letra). */
+  line-height: 2; /* Espacio entre lineas. */
+  letter-spacing: 1px; /* Espacio entre caracteres. */
+}
+
+body {
+  width: 600px; /* tamaño en pixeles del body(cuerpo). */
+  margin: 0 auto; /* elimina el estilo automatico de los navegadores. */
+  background-color: #FF9500; /* color fondo del body(cuerpo).*/
+  padding: 0 20px 20px 20px; /* primer valor afectará los lados superior (top) e inferior (bottom) (en este caso haciéndolo en 0), y el segundo valor los lados izquierdo (left) y derecho (right) (aquí, auto es un valor especial que divide el espacio disponible entre derecha e izquierda). Puedes usar esta propiedad con uno, dos, tres o cuatro valores. */
+  border: 5px solid black; /* este simplemente pone un borde de 5 píxeles de ancho, continuo y de color negro alrededor del elemento body. */
+}
+
+img {
+  width: 600px; /* ajusta el tamaño de la imagen en pixles */
+  display: block; /* Las imágenes, por otra parte, son elementos inline, lo que quiere decir que no puedes aplicarles márgenes, debes dar a la imagen un comportamiento de block-level usando display: block;. */
+  margin: 0 auto; 
+}
