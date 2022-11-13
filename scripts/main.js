@@ -23,7 +23,7 @@ function estableceNombreUsuario() {
     estableceNombreUsuario();
   } else {
     localStorage.setItem('nombre', miNombre);
-    miTitulo.innerHTML = 'Mozilla is genial, ' + miNombre;
+    miTitulo.innerHTML = 'Bienvenido ' + miNombre;
   }
 }
 
@@ -33,7 +33,7 @@ if (!localStorage.getItem('nombre')) {
 }
 else {
     let nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Mozilla es genial,' + nombreAlmacenado;
+    miTitulo.textContent = 'Bienvenido' + nombreAlmacenado;
 }
 
 miBoton.onclick = function() {
