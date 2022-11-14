@@ -33,7 +33,7 @@ if (!localStorage.getItem('nombre')) {
 }
 else {
     let nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Bienvenido' + nombreAlmacenado;
+    miTitulo.textContent = 'Bienvenido ' + nombreAlmacenado;
 }
 
 miBoton.onclick = function() {
